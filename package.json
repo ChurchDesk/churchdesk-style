@@ -1,9 +1,23 @@
 {
-  "name": "churchdesk-style",
-  "version": "2.0.0",
-  "description": "A mostly reasonable approach to JavaScript.",
+  "name": "eslint-config-airbnb-base",
+  "version": "11.0.1",
+  "description": "Airbnb's base JS ESLint config, following our styleguide",
+  "main": "index.js",
   "scripts": {
-    "preinstall": "npm run install:config:base",
-    "install:config:base": "cd packages/eslint-config-airbnb-base && npm prune && npm install"
+    "prelint": "editorconfig-tools check * rules/* test/*",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "editorconfig-tools": "^0.1.1",
+    "eslint": "^3.14.0",
+    "eslint-find-rules": "^1.14.3",
+    "eslint-plugin-import": "^2.2.0"
+  },
+  "peerDependencies": {
+    "eslint": "^3.14.0",
+    "eslint-plugin-import": "^2.2.0"
+  },
+  "engines": {
+    "node": ">= 4"
   }
 }
