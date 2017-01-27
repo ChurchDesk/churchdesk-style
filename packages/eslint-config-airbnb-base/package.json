@@ -5,46 +5,8 @@
   "main": "index.js",
   "scripts": {
     "prelint": "editorconfig-tools check * rules/* test/*",
-    "lint": "eslint .",
-    "tests-only": "babel-tape-runner ./test/test-*.js",
-    "prepublish": "(in-install || eslint-find-rules --unused) && (not-in-publish || npm test) && safe-publish-latest",
-    "pretest": "npm run --silent lint",
-    "test": "npm run --silent tests-only",
-    "travis": "npm run --silent test"
+    "lint": "eslint ."
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/airbnb/javascript"
-  },
-  "keywords": [
-    "eslint",
-    "eslintconfig",
-    "config",
-    "airbnb",
-    "javascript",
-    "styleguide"
-  ],
-  "author": "Jake Teton-Landis (https://twitter.com/@jitl)",
-  "contributors": [
-    {
-      "name": "Jake Teton-Landis",
-      "url": "https://twitter.com/jitl"
-    },
-    {
-      "name": "Jordan Harband",
-      "email": "ljharb@gmail.com",
-      "url": "http://ljharb.codes"
-    },
-    {
-      "name": "Harrison Shoff",
-      "url": "https://twitter.com/hshoff"
-    }
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/airbnb/javascript/issues"
-  },
-  "homepage": "https://github.com/airbnb/javascript",
   "devDependencies": {
     "babel-preset-airbnb": "^2.1.1",
     "babel-tape-runner": "^2.0.1",
