@@ -1,6 +1,6 @@
 # ChurchDesk-Style
 
-A sane default eslint config based on Airbnbs eslint rules.
+A sane eslint configuration based on Airbnbs javascript eslint rules.
 
 * Install:
 ```npm install git+ssh://git@github.com/ChurchDesk/churchdesk-style.git --save-dev```
