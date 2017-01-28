@@ -2,22 +2,20 @@ module.exports = {
   env: {
     node: true
   },
-  parserOptions: {'ecmaVersion': 2017},
+  parserOptions: {
+    ecmaVersion: 2017
+  },
   plugins: ['node'],
   rules: {
-
     'no-process-exit': 'error',
-    'node/no-deprecated-api': 'error',
+    'node/no-deprecated-api': 'warn',
     'node/no-missing-require': 'error',
     'node/no-unpublished-bin': 'error',
-    'node/no-unpublished-require': 'error',
-    'node/no-unsupported-features': 'error',
     'node/process-exit-as-throw': 'error',
     'node/shebang': 'error',
     'node/exports-style': ['error', 'module.exports'],
     'node/no-unsupported-features': ['error', {
-        'version': 4,
-        'ignores': []
+      ignores: []
     }],
 
     // enforce return after a callback
@@ -42,9 +40,6 @@ module.exports = {
 
     // disallow use of process.env
     'no-process-env': 'off',
-
-    // disallow process.exit()
-    'no-process-exit': 'off',
 
     // restrict usage of specified node modules
     'no-restricted-modules': 'off',
