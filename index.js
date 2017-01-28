@@ -3,19 +3,13 @@ module.exports = {
     './rules/best-practices',
     './rules/errors',
     './rules/node',
+    './rules/promise',
     './rules/style',
     './rules/variables',
     './rules/es6',
     './rules/imports',
+    './rules/mocha',
   ].map(require.resolve),
-  parserOptions: {
-    ecmaVersion: 2017,
-    sourceType: 'module',
-    ecmaFeatures: {
-      experimentalObjectRestSpread: true,
-    },
-  },
   rules: {
-    strict: 'error',
   },
 };

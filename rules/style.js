@@ -1,11 +1,11 @@
 module.exports = {
   rules: {
     // enforce spacing inside array brackets
-    'array-bracket-spacing': ['error', 'never'],
+    'array-bracket-spacing': ['warn', 'never'], // TODO:
 
     // enforce spacing inside single-line blocks
     // http://eslint.org/docs/rules/block-spacing
-    'block-spacing': ['error', 'always'],
+    'block-spacing': ['warn', 'always'], // TODO:
 
     // enforce one true brace style
     'brace-style': ['error', '1tbs', { allowSingleLine: true }],
@@ -130,7 +130,7 @@ module.exports = {
 
     // require or disallow newlines around directives
     // http://eslint.org/docs/rules/lines-around-directive
-    'lines-around-directive': ['error', {
+    'lines-around-directive': ['warn', { // TODO:
       before: 'always',
       after: 'always',
     }],
@@ -140,7 +140,7 @@ module.exports = {
 
     // specify the maximum length of a line in your program
     // http://eslint.org/docs/rules/max-len
-    'max-len': ['error', 100, 2, {
+    'max-len': ['warn', 100, 2, { // TODO
       ignoreUrls: true,
       ignoreComments: false,
       ignoreRegExpLiterals: true,
@@ -195,14 +195,14 @@ module.exports = {
     // enforces new line after each method call in the chain to make it
     // more readable and easy to maintain
     // http://eslint.org/docs/rules/newline-per-chained-call
-    'newline-per-chained-call': ['error', { ignoreChainWithDepth: 4 }],
+    'newline-per-chained-call': ['warn', { ignoreChainWithDepth: 4 }], // TODO: important
 
     // disallow use of the Array constructor
     'no-array-constructor': 'error',
 
     // disallow use of bitwise operators
     // http://eslint.org/docs/rules/no-bitwise
-    'no-bitwise': 'error',
+    'no-bitwise': 'warn', // TODO:
 
     // disallow use of the continue statement
     // http://eslint.org/docs/rules/no-continue
@@ -213,11 +213,11 @@ module.exports = {
 
     // disallow if as the only statement in an else block
     // http://eslint.org/docs/rules/no-lonely-if
-    'no-lonely-if': 'error',
+    'no-lonely-if': 0, // TODO
 
     // disallow un-paren'd mixes of different operators
     // http://eslint.org/docs/rules/no-mixed-operators
-    'no-mixed-operators': ['error', {
+    'no-mixed-operators': ['warn', { // TODO:
       groups: [
         ['+', '-', '*', '/', '%', '**'],
         ['&', '|', '^', '~', '<<', '>>', '>>>'],
@@ -233,7 +233,7 @@ module.exports = {
 
     // disallow use of chained assignment expressions
     // http://eslint.org/docs/rules/no-multi-assign
-    'no-multi-assign': ['error'],
+    'no-multi-assign': ['warn'], // TODO:
 
     // disallow multiple empty lines and only one newline at the end
     'no-multiple-empty-lines': ['error', { max: 2, maxEOF: 1 }],
@@ -250,7 +250,7 @@ module.exports = {
 
     // disallow use of unary operators, ++ and --
     // http://eslint.org/docs/rules/no-plusplus
-    'no-plusplus': 'error',
+    'no-plusplus': 'warn', // TODO
 
     // disallow certain syntax forms
     // http://eslint.org/docs/rules/no-restricted-syntax
@@ -280,14 +280,14 @@ module.exports = {
     // disallow the use of Boolean literals in conditional expressions
     // also, prefer `a || b` over `a ? a : b`
     // http://eslint.org/docs/rules/no-unneeded-ternary
-    'no-unneeded-ternary': ['error', { defaultAssignment: false }],
+    'no-unneeded-ternary': ['warn', { defaultAssignment: false }], // TODO
 
     // disallow whitespace before properties
     // http://eslint.org/docs/rules/no-whitespace-before-property
     'no-whitespace-before-property': 'error',
 
     // require padding inside curly braces
-    'object-curly-spacing': ['error', 'always'],
+    'object-curly-spacing': ['warn', 'always'], // TODO: error
 
     // enforce line breaks between braces
     // http://eslint.org/docs/rules/object-curly-newline
@@ -348,11 +348,7 @@ module.exports = {
 
     // require or disallow space before function opening parenthesis
     // http://eslint.org/docs/rules/space-before-function-paren
-    'space-before-function-paren': ['error', {
-      anonymous: 'always',
-      named: 'never',
-      asyncArrow: 'always'
-    }],
+    'space-before-function-paren': [2, {anonymous: 'always', named: 'never'}],
 
     // require or disallow spaces inside parentheses
     'space-in-parens': ['error', 'never'],

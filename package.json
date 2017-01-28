@@ -1,17 +1,24 @@
 {
-  "name": "eslint-config-airbnb-base",
+  "name": "eslint-config-churchdesk-style",
   "version": "11.0.1",
   "description": "Airbnb's base JS ESLint config, following our styleguide",
   "main": "index.js",
   "scripts": {
-    "prelint": "editorconfig-tools check * rules/* test/*",
     "lint": "eslint ."
   },
   "devDependencies": {
     "editorconfig-tools": "^0.1.1",
     "eslint": "^3.14.0",
     "eslint-find-rules": "^1.14.3",
-    "eslint-plugin-import": "^2.2.0"
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-node": "^3.0.5"
+  },
+  "peerDependencies": {
+    "eslint": "^3.14.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-mocha": "^4.6.0",
+    "eslint-plugin-promise": "^2.0.0",
+    "eslint-plugin-node": "^3.0.5"
   },
   "engines": {
     "node": ">= 4"

@@ -2,26 +2,18 @@ module.exports = {
   env: {
     es6: true
   },
-  parserOptions: {
-    ecmaVersion: 6,
-    sourceType: 'module',
-    ecmaFeatures: {
-      generators: false,
-      objectLiteralDuplicateProperties: false
-    }
-  },
 
   rules: {
     // enforces no braces where they can be omitted
     // http://eslint.org/docs/rules/arrow-body-style
     // TODO: enable requireReturnForObjectLiteral?
-    'arrow-body-style': ['error', 'as-needed', {
+    'arrow-body-style': ['warn', 'as-needed', { // TODO
       requireReturnForObjectLiteral: false,
     }],
 
     // require parens in arrow function arguments
     // http://eslint.org/docs/rules/arrow-parens
-    'arrow-parens': ['error', 'as-needed', {
+    'arrow-parens': ['warn', 'as-needed', { // TODO:
       requireForBlockBody: true,
     }],
 
@@ -42,7 +34,7 @@ module.exports = {
 
     // disallow arrow functions where they could be confused with comparisons
     // http://eslint.org/docs/rules/no-confusing-arrow
-    'no-confusing-arrow': ['error', {
+    'no-confusing-arrow': ['warn', { // TODO
       allowParens: true,
     }],
 
@@ -91,13 +83,13 @@ module.exports = {
 
     // require method and property shorthand syntax for object literals
     // http://eslint.org/docs/rules/object-shorthand
-    'object-shorthand': ['error', 'always', {
+    'object-shorthand': ['warn', 'always', { // TODO:
       ignoreConstructors: false,
       avoidQuotes: true,
     }],
 
     // suggest using arrow functions as callbacks
-    'prefer-arrow-callback': ['error', {
+    'prefer-arrow-callback': ['warn', {
       allowNamedFunctions: false,
       allowUnboundThis: true,
     }],
@@ -137,7 +129,7 @@ module.exports = {
 
     // suggest using template literals instead of string concatenation
     // http://eslint.org/docs/rules/prefer-template
-    'prefer-template': 'error',
+    'prefer-template': 'warn', // TODO:
 
     // disallow generator functions that do not have yield
     // http://eslint.org/docs/rules/require-yield

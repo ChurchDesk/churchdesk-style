@@ -2,8 +2,24 @@ module.exports = {
   env: {
     node: true
   },
-
+  parserOptions: {'ecmaVersion': 2017},
+  plugins: ['node'],
   rules: {
+
+    'no-process-exit': 'error',
+    'node/no-deprecated-api': 'error',
+    'node/no-missing-require': 'error',
+    'node/no-unpublished-bin': 'error',
+    'node/no-unpublished-require': 'error',
+    'node/no-unsupported-features': 'error',
+    'node/process-exit-as-throw': 'error',
+    'node/shebang': 'error',
+    'node/exports-style': ['error', 'module.exports'],
+    'node/no-unsupported-features': ['error', {
+        'version': 4,
+        'ignores': []
+    }],
+
     // enforce return after a callback
     'callback-return': 'off',
 
@@ -22,7 +38,7 @@ module.exports = {
 
     // disallow string concatenation with __dirname and __filename
     // http://eslint.org/docs/rules/no-path-concat
-    'no-path-concat': 'error',
+    'no-path-concat': 0, // TODO
 
     // disallow use of process.env
     'no-process-env': 'off',
@@ -35,5 +51,5 @@ module.exports = {
 
     // disallow use of synchronous methods (off by default)
     'no-sync': 'off',
-  }
+  },
 };

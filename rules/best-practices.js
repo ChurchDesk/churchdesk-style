@@ -50,7 +50,7 @@ module.exports = {
 
     // disallow lexical declarations in case/default clauses
     // http://eslint.org/docs/rules/no-case-declarations.html
-    'no-case-declarations': 'error',
+    'no-case-declarations': 'warn',
 
     // disallow division operators explicitly at beginning of regular expression
     // http://eslint.org/docs/rules/no-div-regex
@@ -142,7 +142,7 @@ module.exports = {
     }],
 
     // disallow use of multiple spaces
-    'no-multi-spaces': 'error',
+    'no-multi-spaces': 'warn', // TODO:
 
     // disallow use of multiline strings
     'no-multi-str': 'error',
@@ -166,7 +166,7 @@ module.exports = {
     // disallow reassignment of function parameters
     // disallow parameter object manipulation
     // rule: http://eslint.org/docs/rules/no-param-reassign.html
-    'no-param-reassign': ['error', { props: true }],
+    'no-param-reassign': ['error'],
 
     // disallow usage of __proto__ property
     'no-proto': 'error',
@@ -233,11 +233,11 @@ module.exports = {
 
     // disallow useless string concatenation
     // http://eslint.org/docs/rules/no-useless-concat
-    'no-useless-concat': 'error',
+    'no-useless-concat': 0, // TODO
 
     // disallow unnecessary string escaping
     // http://eslint.org/docs/rules/no-useless-escape
-    'no-useless-escape': 'error',
+    'no-useless-escape': 'warn', // TODO
 
     // disallow redundant return; keywords
     // http://eslint.org/docs/rules/no-useless-return

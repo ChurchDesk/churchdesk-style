@@ -23,7 +23,7 @@ module.exports = {
     'no-constant-condition': 'warn',
 
     // disallow control characters in regular expressions
-    'no-control-regex': 'error',
+    'no-control-regex': 0, // TODO
 
     // disallow use of debugger
     'no-debugger': 'error',
@@ -78,7 +78,7 @@ module.exports = {
 
     // disallow use of Object.prototypes builtins directly
     // http://eslint.org/docs/rules/no-prototype-builtins
-    'no-prototype-builtins': 'error',
+    'no-prototype-builtins': 0, // TODO:
 
     // disallow multiple spaces in a regular expression literal
     'no-regex-spaces': 'error',
@@ -118,5 +118,5 @@ module.exports = {
     // ensure that the results of typeof are compared against a valid string
     // http://eslint.org/docs/rules/valid-typeof
     'valid-typeof': ['error', { requireStringLiterals: true }],
-  }
+  },
 };
