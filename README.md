@@ -14,7 +14,7 @@ A sane default eslint config based on Airbnbs eslint rules.
     "node": ">=4.0.0 <5.0"
 }, 
 "scripts": {
-  "lint": "eslint --ignore-pattern=developers --quiet ."
+  "lint": "eslint --quiet ."
 }
 ```
 
@@ -25,3 +25,6 @@ test:
   pre:
     - npm run lint
 ```
+
+## Eslint ignore
+Copy `.eslintignore-example` to ignore certain folders 
