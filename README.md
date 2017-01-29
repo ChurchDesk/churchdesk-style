@@ -14,7 +14,7 @@ A sane eslint configuration based on Airbnbs javascript eslint rules.
     "node": ">=4.0.0 <5.0"
 }, 
 "scripts": {
-  "lint": "eslint --ignore-pattern=developers --quiet ."
+  "lint": "eslint --quiet ."
 }
 ```
 
