@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
   rules: {
     // enforces getter/setter pairs in objects
