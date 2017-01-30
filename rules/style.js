@@ -1,3 +1,4 @@
+'use strict';
 module.exports = {
   rules: {
     // enforce spacing inside array brackets
@@ -11,7 +12,7 @@ module.exports = {
     'brace-style': ['error', '1tbs', { allowSingleLine: true }],
 
     // require camel case names
-    camelcase: ['error', { properties: 'never' }],
+    camelcase: ['warn', { properties: 'never' }],
 
     // enforce or disallow capitalization of the first letter of a comment
     // http://eslint.org/docs/rules/capitalized-comments
@@ -41,7 +42,7 @@ module.exports = {
     'consistent-this': 'off',
 
     // enforce newline at the end of file, with no multiple empty lines
-    'eol-last': ['error', 'always'],
+    'eol-last': [0, 'always'],
 
     // enforce spacing between functions and their invocations
     // http://eslint.org/docs/rules/func-call-spacing
@@ -175,7 +176,7 @@ module.exports = {
     'multiline-ternary': ['off', 'never'],
 
     // require a capital letter for constructors
-    'new-cap': ['error', {
+    'new-cap': ['warn', {
       newIsCap: true,
       newIsCapExceptions: [],
       capIsNew: false,
@@ -275,7 +276,7 @@ module.exports = {
     'no-trailing-spaces': 'error',
 
     // disallow dangling underscores in identifiers
-    'no-underscore-dangle': ['error', { allowAfterThis: false }],
+    'no-underscore-dangle': 0, // ['error', { allowAfterThis: false }],
 
     // disallow the use of Boolean literals in conditional expressions
     // also, prefer `a || b` over `a ? a : b`
@@ -318,14 +319,14 @@ module.exports = {
     'operator-linebreak': 'off',
 
     // enforce padding within blocks
-    'padded-blocks': ['error', 'never'],
+    'padded-blocks': [1, 'never'],
 
     // require quotes around object literal property names
     // http://eslint.org/docs/rules/quote-props.html
-    'quote-props': ['error', 'as-needed', { keywords: false, unnecessary: true, numbers: false }],
+    'quote-props': 0,
 
     // specify whether double or single quotes should be used
-    quotes: ['error', 'single', { avoidEscape: true }],
+    quotes: [1, 'single', { avoidEscape: true }],
 
     // do not require jsdoc
     // http://eslint.org/docs/rules/require-jsdoc

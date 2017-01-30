@@ -3,6 +3,8 @@ module.exports = {
     // enforces getter/setter pairs in objects
     'accessor-pairs': 'off',
 
+    "strict": [2, "safe"],
+
     // enforces return statements in callbacks of array's methods
     // http://eslint.org/docs/rules/array-callback-return
     'array-callback-return': 'error',
@@ -20,7 +22,7 @@ module.exports = {
     }],
 
     // require return statements to either always or never specify values
-    'consistent-return': 'error',
+    'consistent-return': 0,
 
     // specify curly brace conventions for all control statements
     curly: ['error', 'multi-line'],
@@ -57,7 +59,7 @@ module.exports = {
     'no-div-regex': 'off',
 
     // disallow else after a return in an if
-    'no-else-return': 'error',
+    'no-else-return': 0,
 
     // disallow empty functions, except for standalone funcs/arrows
     // http://eslint.org/docs/rules/no-empty-function
@@ -266,11 +268,11 @@ module.exports = {
     'require-await': 'off',
 
     // requires to declare all vars on top of their containing scope
-    'vars-on-top': 'error',
+    'vars-on-top': 1, // TODO
 
     // require immediate function invocation to be wrapped in parentheses
     // http://eslint.org/docs/rules/wrap-iife.html
-    'wrap-iife': ['error', 'outside', { functionPrototypeMethods: false }],
+    'wrap-iife': [0, 'outside', { functionPrototypeMethods: false }],
 
     // require or disallow Yoda conditions
     yoda: 'error'

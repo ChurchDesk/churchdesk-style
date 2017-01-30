@@ -3,6 +3,25 @@ module.exports = {
     es6: true
   },
 
+  "ecmaFeatures": {
+    "arrowFunctions": true,
+    "blockBindings": true,
+    "classes": true,
+    "defaultParams": true,
+    "destructuring": true,
+    "forOf": true,
+    "generators": false,
+    "modules": true,
+    "objectLiteralComputedProperties": true,
+    "objectLiteralDuplicateProperties": false,
+    "objectLiteralShorthandMethods": true,
+    "objectLiteralShorthandProperties": true,
+    "spread": true,
+    "superInFunctions": true,
+    "templateStrings": true,
+    "jsx": true
+  },
+
   rules: {
     // enforces no braces where they can be omitted
     // http://eslint.org/docs/rules/arrow-body-style
@@ -79,7 +98,7 @@ module.exports = {
     }],
 
     // require let or const instead of var
-    'no-var': 'error',
+    'no-var': 1, // TODO
 
     // require method and property shorthand syntax for object literals
     // http://eslint.org/docs/rules/object-shorthand
@@ -95,10 +114,11 @@ module.exports = {
     }],
 
     // suggest using of const declaration for variables that are never modified after declared
-    'prefer-const': ['error', {
+    /* 'prefer-const': ['error', { #MH: Not working inside lodash foreach
       destructuring: 'any',
       ignoreReadBeforeAssign: true,
-    }],
+    }],*/
+    'prefer-const': 0,
 
     // Prefer destructuring from arrays and objects
     // http://eslint.org/docs/rules/prefer-destructuring

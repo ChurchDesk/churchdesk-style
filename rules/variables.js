@@ -17,7 +17,7 @@ module.exports = {
     'no-restricted-globals': 'off',
 
     // disallow declaration of variables already declared in the outer scope
-    'no-shadow': 'error',
+    'no-shadow': 1,
 
     // disallow shadowing of names such as arguments
     'no-shadow-restricted-names': 'error',
@@ -34,9 +34,12 @@ module.exports = {
     'no-undefined': 'off',
 
     // disallow declaration of variables that are not used in the code
-    'no-unused-vars': ['error', { vars: 'local', args: 'after-used' }],
+    'no-unused-vars': [1, {          // http://eslint.org/docs/rules/no-unused-vars
+      vars: 'local',
+      args: 'none'                 // MH: Express recomends this: https://github.com/expressjs/generator/issues/78
+    }],
 
     // disallow use of variables before they are defined
-    'no-use-before-define': 'error'
+    'no-use-before-define': [0, { 'functions': false, 'classes': false }]
   }
 };
