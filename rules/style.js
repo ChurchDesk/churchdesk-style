@@ -58,7 +58,7 @@ module.exports = {
 
     // require function expressions to have a name
     // http://eslint.org/docs/rules/func-names
-    'func-names': 'warn',
+    'func-names': 0, // TODO: Disabled.
 
     // enforces use of function declarations or expressions
     // http://eslint.org/docs/rules/func-style
@@ -142,7 +142,7 @@ module.exports = {
 
     // specify the maximum length of a line in your program
     // http://eslint.org/docs/rules/max-len
-    'max-len': ['warn', 100, 2, { // TODO
+    'max-len': ['warn', 180, 2, { // TODO
       ignoreUrls: true,
       ignoreComments: false,
       ignoreRegExpLiterals: true,
