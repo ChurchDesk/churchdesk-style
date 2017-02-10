@@ -12,4 +12,4 @@ module.exports = {
     'mocha/no-mocha-arrows': 2, // http://mochajs.org/#arrow-functions
     'mocha/no-identical-title': 2
   }
-}
+};

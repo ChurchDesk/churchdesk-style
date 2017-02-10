@@ -13,4 +13,4 @@ module.exports = {
     'promise/catch-or-return': 2,
     'promise/no-native': 0,
   }
-}
+};
