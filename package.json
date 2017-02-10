@@ -11,15 +11,15 @@
     "eslint-find-rules": "^1.14.3",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-mocha": "^4.6.0",
-    "eslint-plugin-promise": "^2.0.0",
-    "eslint-plugin-node": "^3.0.5"
+    "eslint-plugin-node": "^4.0.1",
+    "eslint-plugin-promise": "^3.4.1"
   },
   "peerDependencies": {
     "eslint": "^3.14.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-mocha": "^4.6.0",
-    "eslint-plugin-promise": "^2.0.0",
-    "eslint-plugin-node": "^3.0.5"
+    "eslint-plugin-node": "^4.0.1",
+    "eslint-plugin-promise": "^3.4.1"
   },
   "engines": {
     "node": ">= 4"
