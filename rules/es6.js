@@ -34,9 +34,7 @@ module.exports = {
 
     // require parens in arrow function arguments
     // http://eslint.org/docs/rules/arrow-parens
-    'arrow-parens': ['warn', 'as-needed', { // TODO:
-      requireForBlockBody: true,
-    }],
+    'arrow-parens': ['warn', 'as-needed'],
 
     // require space before/after arrow function's arrow
     // http://eslint.org/docs/rules/arrow-spacing
@@ -110,7 +108,7 @@ module.exports = {
     }],
 
     // suggest using arrow functions as callbacks
-    'prefer-arrow-callback': ['warn', {
+    'prefer-arrow-callback': ['off', {
       allowNamedFunctions: false,
       allowUnboundThis: true,
     }],
