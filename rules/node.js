@@ -9,8 +9,11 @@ module.exports = {
   },
   plugins: ['node'],
   rules: {
+    'node/no-extraneous-import': 'error',
+    'node/no-extraneous-require': 'error',
     'no-process-exit': 'error',
     'node/no-deprecated-api': 'warn',
+    'node/no-missing-import': 'error',
     'node/no-missing-require': 'error',
     'node/no-unpublished-bin': 'error',
     'node/process-exit-as-throw': 'error',

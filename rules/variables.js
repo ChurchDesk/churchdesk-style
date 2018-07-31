@@ -36,9 +36,9 @@ module.exports = {
     'no-undefined': 'off',
 
     // disallow declaration of variables that are not used in the code
-    'no-unused-vars': [1, {          // http://eslint.org/docs/rules/no-unused-vars
+    'no-unused-vars': [1, { // http://eslint.org/docs/rules/no-unused-vars
       vars: 'local',
-      args: 'none'                 // MH: Express recomends this: https://github.com/expressjs/generator/issues/78
+      args: 'none' // MH: Express recomends this: https://github.com/expressjs/generator/issues/78
     }],
 
     // disallow use of variables before they are defined

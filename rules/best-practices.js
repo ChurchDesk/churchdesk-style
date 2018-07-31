@@ -5,7 +5,7 @@ module.exports = {
     // enforces getter/setter pairs in objects
     'accessor-pairs': 'off',
 
-    "strict": [2, "safe"],
+    'strict': [2, 'safe'],
 
     // enforces return statements in callbacks of array's methods
     // http://eslint.org/docs/rules/array-callback-return

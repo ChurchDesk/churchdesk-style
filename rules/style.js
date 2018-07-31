@@ -84,7 +84,7 @@ module.exports = {
       outerIIFEBody: 1,
       // MemberExpression: null,
       // CallExpression: {
-        // parameters: null,
+      // parameters: null,
       // },
       FunctionDeclaration: {
         parameters: 1,
@@ -350,7 +350,7 @@ module.exports = {
 
     // require or disallow space before function opening parenthesis
     // http://eslint.org/docs/rules/space-before-function-paren
-    'space-before-function-paren': [2, {anonymous: 'always', named: 'never'}],
+    'space-before-function-paren': [2, { anonymous: 'always', named: 'never' }],
 
     // require or disallow spaces inside parentheses
     'space-in-parens': ['error', 'never'],
