@@ -9,19 +9,23 @@ module.exports = {
   },
   plugins: ['node'],
   rules: {
+    // Recommended rules:
     'node/no-extraneous-import': 'error',
     'node/no-extraneous-require': 'error',
-    'no-process-exit': 'error',
-    'node/no-deprecated-api': 'warn',
     'node/no-missing-import': 'error',
     'node/no-missing-require': 'error',
     'node/no-unpublished-bin': 'error',
+    'node/no-unpublished-import': 'error',
+    'node/no-unpublished-require': 'off',
+    'node/no-unsupported-features/es-builtins': 'error',
+    'node/no-unsupported-features/es-syntax': 'error',
+    'node/no-unsupported-features/node-builtins': 'error',
     'node/process-exit-as-throw': 'error',
     'node/shebang': 'error',
+    'no-process-exit': 'error',
+
+    'node/no-deprecated-api': 'error',
     'node/exports-style': ['error', 'module.exports'],
-    'node/no-unsupported-features': ['error', {
-      ignores: []
-    }],
 
     // enforce return after a callback
     'callback-return': 'off',
@@ -31,7 +35,7 @@ module.exports = {
     'global-require': 'error',
 
     // enforces error handling in callbacks (node environment)
-    'handle-callback-err': 'off',
+    'handle-callback-err': 'error',
 
     // disallow mixing regular variable and require declarations
     'no-mixed-requires': ['off', false],
@@ -50,6 +54,12 @@ module.exports = {
     'no-restricted-modules': 'off',
 
     // disallow use of synchronous methods (off by default)
-    'no-sync': 'off',
+    'no-sync': 'error',
+
+    'newline-per-chained-call': 'off',
+
+    'arrow-body-style': 'off',
+    'import/no-unresolved': 'off',
+    'mocha/no-mocha-arrows': 'off'
   },
 };
